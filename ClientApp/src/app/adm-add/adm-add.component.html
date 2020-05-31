@@ -1,0 +1,28 @@
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Administrador </h1>
+    </div>
+    <p class="text-danger">Todos los campos son requeridos</p>
+
+    
+         <div class="form-group">
+            <label>Usuario:
+            <input [(ngModel)]="administrador.usuario" class="form-control" placeholder="digite el usuario" type="string"/>
+            
+        </label>
+         </div>
+         
+         <div class="form-group">
+            <label>Contraseña:
+            <input [(ngModel)]="administrador.contrasena" class="form-control" placeholder="digite la contraseña" type="password"/>
+            </label>
+         </div>
+        
+         
+            
+         <div class="form-group">
+            <button (click)="add()" class="btn btn-primary">Agregar</button>
+            </div>
+
+         
+

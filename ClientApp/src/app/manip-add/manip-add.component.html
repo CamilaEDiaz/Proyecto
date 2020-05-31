@@ -1,0 +1,38 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Registro Manipulador </h1>
+    </div>
+    <p class="text-danger">Todos los campos son requeridos</p>
+
+    <div class="form-group">
+        <label>Cedula:
+        <input [(ngModel)]="manipulador.cedula" class="form-control" placeholder="digite el id" type="text"/>
+        </label>
+    </div>
+
+        <div class="form-group">
+            <label>Nombre:
+            <input [(ngModel)]="manipulador.nombre" class="form-control" placeholder="digite el nombre" type="text"/>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>Telefono:
+            <input [(ngModel)]="manipulador.telefono" class="form-control" placeholder="digite el telefono" type="text"/>
+            </label>
+         </div>
+         
+         <div class="form-group">
+                <label>Correo:
+                <input [(ngModel)]="manipulador.correo" class="form-control" placeholder="digite el correo" type="text"/>
+                </label>
+         </div>
+
+         <div class="form-group">
+            <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
+            <input type="file" id="ejemplo_archivo_1">
+            
+          </div>
+         
+         <div class="form-group">
+            <button (click)="addM()" class="btn btn-primary">Agregar</button>
+            </div>

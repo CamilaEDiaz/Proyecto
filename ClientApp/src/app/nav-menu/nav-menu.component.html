@@ -1,0 +1,58 @@
+<header>
+  <nav  class="navbar navbar-expand-sm bg-info navbar-dark">
+    
+        
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/microupc.png" width="30" height="30" alt="">
+      </a>
+    </nav>
+
+    <div class="container">
+      
+      <a class="navbar-brand" [routerLink]="['/']">Proyecto</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-white" [routerLink]="['/']">Home</a>
+          </li>
+
+          <li class="nav-item" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link text-white" [routerLink]='["/admadd"]'>Registro Administrador</a>
+           </li>
+            <li class="nav-item" [routerLinkActive]='["link-active"]'>
+              <a class="nav-link text-white" [routerLink]='["/restadd"]'>Registro Restaurante</a>
+            </li>
+              <li class="nav-item" [routerLinkActive]='["link-active"]'>
+                <a class="nav-link text-white" [routerLink]='["/restlist"]'></a>
+              </li> 
+                <li class="nav-item" [routerLinkActive]='["link-active"]'>
+                  <a class="nav-link text-white" [routerLink]='["/manipadd"]'>Registro Manipulador</a>
+                </li>
+                  <li class="nav-item" [routerLinkActive]='["link-active"]'>
+                    <a class="nav-link text-white" [routerLink]='["/maniplist"]'></a>
+                  </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
